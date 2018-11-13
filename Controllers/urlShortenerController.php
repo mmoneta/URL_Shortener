@@ -18,7 +18,10 @@
       require(ROOT . 'Models/URL_Shortener.php');
       $urlShortener = new URL_Shortener();
       $link = $urlShortener->select_link_by_key($key);
-      header("location: ".$link);
+      if ($link)
+        header("location: ".$link);
+      else
+        header("location: ".Config::getFullHost());
     }
 
     function creator() {
