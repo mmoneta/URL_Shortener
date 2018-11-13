@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.title {
+  padding: 15px 0px;
+}
+
+th, td {
+  text-align: center;
+}
