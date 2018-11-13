@@ -7,6 +7,18 @@ body {
   padding: 15px 0px;
 }
 
-th, td {
+.table th, .table td {
   text-align: center;
+  vertical-align: middle;
+}
+
+.table button {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  padding: 8px;
+}
+
+.table button:hover {
+  background-color: rgb(237, 44, 85);
 }
